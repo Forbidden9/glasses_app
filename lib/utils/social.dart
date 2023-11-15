@@ -1,3 +1,4 @@
 
   String cPhone = "+5358285255";
-  String gMessage = "Hola, le escribo por sus servicios";
+  String gTelegram = "httpstmeU9eIMtdB0fRyubt0";
+  String pInstagram = "lyl_repairglasess";
