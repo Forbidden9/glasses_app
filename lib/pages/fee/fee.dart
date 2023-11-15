@@ -30,7 +30,7 @@ class _FeeState extends State<Fee> {
     return Scaffold(
       backgroundColor: sBackgroundColor,
       appBar: AppBar(
-        title: const Text("Tarifa de Servicios", style: TextStyle(fontWeight: FontWeight.bold),),
+        title: const Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold),),
         backgroundColor: aBackgroundColor,
       ),
       body: Animate(
