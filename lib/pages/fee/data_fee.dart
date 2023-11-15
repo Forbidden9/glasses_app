@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 
-class DataFee extends StatelessWidget {
+class DataFeeRepair extends StatelessWidget {
   final String action;
-  final int amount;
-  final String currency;
 
-  const DataFee({super.key, required this.action, required this.amount, required this.currency});
+  const DataFeeRepair({super.key, required this.action});
 
   @override
   Widget build(BuildContext context) {
@@ -21,17 +19,7 @@ class DataFee extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Row(
-              children: [
-                Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
-              ],
-            ),
-            Row(
-              children: [
-                Text(amount.toString(), style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-                Text(currency, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
-              ]
-            ),
+            Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
           ],
         )
       ),
