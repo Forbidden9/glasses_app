@@ -11,30 +11,38 @@ class Services extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        appBar: AppBar(
-          title: const Text("Servicios", style: TextStyle(fontWeight: FontWeight.bold),),
-          backgroundColor: aBackgroundColor,
-          bottom: const TabBar(
-            labelColor: Colors.white,
-            unselectedLabelColor: Colors.black,
-            indicatorColor: Colors.red,
-            tabs: [
-              Tab(
-                child: Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold)),
+        body: Padding( 
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Container(
+                height: 50,
+                color: aBackgroundColor,
+                child: const TabBar(
+                  indicatorColor: sBackgroundColor, 
+                  labelColor: cTextColor, 
+                  dividerColor: cTextColor,
+                  tabs: [
+                    Tab(
+                      child: Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold)),
+                    ),
+                    Tab(
+                      child: Text("Servicios de Óptica", style: TextStyle(fontWeight: FontWeight.bold)),
+                    )
+                  ]
+                ), 
               ),
-              Tab(
-                child: Text("Servicios de Óptica", style: TextStyle(fontWeight: FontWeight.bold)),
-              )
-            ]
-          ),
-        ),
-        body: const TabBarView(
-          children: [
-            FeeRepair(),
-            OpticaFee()
-          ]
-          )
-      ),
+              const Expanded(
+                child: TabBarView(children: [
+                  FeeRepair(),
+                  OpticaFee()
+                ]), 
+              ) 
+            ], 
+          ), 
+        ), 
+      )
     );
   }
 }
