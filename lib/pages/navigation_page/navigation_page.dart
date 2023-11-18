@@ -19,7 +19,6 @@ class _NavigationPageState extends State<NavigationPage> {
     PersonalInformation(),
     Fee(),
     Stock(),
-    Location(),
     Tips()
   ];
 
@@ -48,9 +47,6 @@ class _NavigationPageState extends State<NavigationPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.shopping_cart_outlined),
             label: "Inventario"),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.pin_drop),
-            label: "Ubicación"),
           BottomNavigationBarItem(
             icon: Icon(Icons.info),
             label: "Consejos")
