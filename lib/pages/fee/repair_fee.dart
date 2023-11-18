@@ -12,13 +12,13 @@ class FeeRepair extends StatefulWidget {
 
 class _FeeRepairState extends State<FeeRepair> {
   List fees = [
+    ["Ajuste de espejuelos"],
     ["Pareja de almohadillas"],
     ["Patas de espejuelos"],
     ["Pita de medio formato"],
     ["Terminales"],
     ["Tornillos"],
     ["Tornillos con tuercas"],
-    ["Ajuste de espejuelos"],
     ["Soldadura simple con ajuste"],
     ["Soldadura compleja"]
   ];
