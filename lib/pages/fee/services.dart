@@ -36,7 +36,7 @@ class Services extends StatelessWidget {
               const Expanded(
                 child: TabBarView(children: [
                   FeeRepair(),
-                  OpticaFee()
+                  FeeOptic()
                 ]), 
               ) 
             ], 
