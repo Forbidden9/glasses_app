@@ -3,6 +3,7 @@ import 'package:glasses_app/pages/fee/services.dart';
 import 'package:glasses_app/pages/personal_information/personal_information.dart';
 import 'package:glasses_app/pages/stock/stock.dart';
 import 'package:glasses_app/pages/tips/tips.dart';
+import 'package:glasses_app/utils/colors.dart';
 
 class NavigationPage extends StatefulWidget {
   const NavigationPage({super.key});
@@ -26,7 +27,7 @@ class _NavigationPageState extends State<NavigationPage> {
     return Scaffold(
       body: _pages[_currentpage],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.red,
+        selectedItemColor: nColor,
         unselectedItemColor: Colors.black,
         showUnselectedLabels: true,
 
