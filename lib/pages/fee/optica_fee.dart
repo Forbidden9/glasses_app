@@ -10,6 +10,16 @@ class FeeOptic extends StatefulWidget {
   const FeeOptic({super.key});
 
   @override
+  State<FeeOptic> createState() => _FeeOpticState();
+}
+
+class _FeeOpticState extends State<FeeOptic> {
+  List fees = [
+    ["Corte y monta"],
+    ["Medición ocular"],
+    ["Refracción"]
+  ];
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: sBackgroundColor,
