@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:glasses_app/utils/colors.dart';
 
 class DataFeeRepair extends StatelessWidget {
   final String action;
@@ -8,18 +9,37 @@ class DataFeeRepair extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(left:45, right: 45, top: 15),
+      margin: const EdgeInsets.only(left:5, right: 5, top: 5),
       padding: const EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        color: Colors.grey[100],
-        borderRadius: BorderRadius.circular(12),
-      ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
+            Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: cTextColor)),
+          ],
+        )
+      ),
+    );
+  }
+}
+
+class DataFeeOptic extends StatelessWidget {
+  final String action;
+
+  const DataFeeOptic({super.key, required this.action});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.only(left:5, right: 5, top: 5),
+      padding: const EdgeInsets.all(5),
+      child: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: cTextColor)),
           ],
         )
       ),
