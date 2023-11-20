@@ -12,7 +12,7 @@ class LocationPage extends StatefulWidget {
 }
 
 class _LocationPageState extends State<LocationPage> {
-  static const LatLng _goggleLocalization = LatLng(23.135791, -82.3758943);
+  static const LatLng _goggleLocalization = LatLng(23.1374214, -82.3557866);
   static const LatLng localDestination = LatLng(23.1377247,-82.3564536);
   
   final Completer<GoogleMapController> _controller = Completer();
@@ -31,7 +31,7 @@ class _LocationPageState extends State<LocationPage> {
       body: GoogleMap(
         initialCameraPosition: const CameraPosition(
           target: _goggleLocalization,
-          zoom: 14
+          zoom: 15
         ),
         markers: {
           const Marker(
