@@ -17,7 +17,7 @@ class PersonalInformation extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          const Text("Obispo 245", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
+          const Text("Bloomix", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24)),
           const SizedBox(height: 20),
           Image.asset("lib/images/background/logo.jpg", height: 240, width: 240,),
           const SizedBox(height: 20),

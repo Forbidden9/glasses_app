@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'L&L Reparador de Espejuelos',
+      title: 'Bloomix',
       theme: ThemeData(
         useMaterial3: true,
       ),

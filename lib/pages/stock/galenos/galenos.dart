@@ -35,7 +35,7 @@ class _GalenoWidgetState extends State<GalenoWidget> {
         itemBuilder: (context, index){
           return DataGalenoFee(
             name: armor[index][0],
-            );
+          );
         }
       ),
     );
