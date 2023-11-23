@@ -26,7 +26,10 @@ class _VisualHearthState extends State<VisualHearth> {
           SlideEffect()
         ],
         child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: (1 / .4)
+          ),
           itemCount: visualTips.length,
           itemBuilder: (context, index){
             return VisualHearthInfo(

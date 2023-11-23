@@ -26,7 +26,10 @@ class _GlassesCarefullyState extends State<GlassesCarefully> {
           SlideEffect()
         ],
         child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: (1 / .6)
+          ),
           itemCount: carefullyTips.length,
           itemBuilder: (context, index){
             return GlassesCarefullyInfo(

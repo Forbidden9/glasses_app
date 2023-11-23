@@ -26,7 +26,10 @@ class _MealVisualHearthState extends State<MealVisualHearth> {
           SlideEffect()
         ],
         child: GridView.builder(
-          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(crossAxisCount: 2),
+          gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+            crossAxisCount: 2,
+            childAspectRatio: (1 / .4)
+          ),
           itemCount: mealTips.length,
           itemBuilder: (context, index){
             return MealVisualHearthInfo(
