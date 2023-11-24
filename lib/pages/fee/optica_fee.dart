@@ -13,26 +13,36 @@ class FeeOptic extends StatefulWidget {
 class _FeeOpticState extends State<FeeOptic> {
   List fees = [
     ["Corte y monta"],
-    ["Medición ocular"],
-    ["Refracción"]
+    ["Refracción ocular"]
   ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: sBackgroundColor,
-      body: Animate(
-        effects: const[
-          FadeEffect(),
-          SlideEffect()
-        ],
-        child: ListView.builder(
-          itemCount: fees.length,
-          itemBuilder: (context, index){
-            return DataFeeOptic(
-              action: fees[index][0],
-            );
-          }
-        )
+      body: Container(
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              aBackgroundColor,
+              Colors.white,
+            ],
+          )
+        ),
+        child: Animate(
+          effects: const[
+            // FadeEffect(),
+            // SlideEffect()
+          ],
+          child: ListView.builder(
+            itemCount: fees.length,
+            itemBuilder: (context, index){
+              return DataFeeOptic(
+                action: fees[index][0],
+              );
+            }
+          )
+        ),
       ),
     );
   }

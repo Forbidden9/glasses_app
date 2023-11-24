@@ -11,36 +11,33 @@ class Services extends StatelessWidget {
     return DefaultTabController(
       length: 2,
       child: Scaffold(
-        body: Padding( 
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
-                height: 50,
-                color: aBackgroundColor,
-                child: const TabBar(
-                  indicatorColor: sBackgroundColor, 
-                  labelColor: cTextColor, 
-                  dividerColor: cTextColor,
-                  tabs: [
-                    Tab(
-                      child: Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold)),
-                    ),
-                    Tab(
-                      child: Text("Servicios de Óptica", style: TextStyle(fontWeight: FontWeight.bold)),
-                    )
-                  ]
-                ), 
-              ),
-              const Expanded(
-                child: TabBarView(children: [
-                  FeeRepair(),
-                  FeeOptic()
-                ]), 
-              ) 
-            ], 
-          ), 
+        body: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              height: 65,
+              color: aBackgroundColor,
+              child: const TabBar(
+                indicatorColor: sBackgroundColor, 
+                labelColor: cTextColor, 
+                dividerColor: cTextColor,
+                tabs: [
+                  Tab(
+                    child: Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                  ),
+                  Tab(
+                    child: Text("Servicios de Óptica", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                  )
+                ]
+              ), 
+            ),
+            const Expanded(
+              child: TabBarView(children: [
+                FeeRepair(),
+                FeeOptic()
+              ]), 
+            ) 
+          ], 
         ), 
       )
     );

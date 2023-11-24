@@ -13,9 +13,9 @@ class FeeRepair extends StatefulWidget {
 class _FeeRepairState extends State<FeeRepair> {
   List fees = [
     ["Ajuste de espejuelos"],
-    ["Pareja de almohadillas"],
+    ["Par de almohadillas"],
     ["Patas de espejuelos"],
-    ["Pita de medio formato"],
+    ["Nylon de alambre para gafas"],
     ["Terminales"],
     ["Tornillos"],
     ["Tornillos con tuercas"],
@@ -26,21 +26,37 @@ class _FeeRepairState extends State<FeeRepair> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: sBackgroundColor,
-      body: Animate(
-        effects: const[
-          FadeEffect(),
-          SlideEffect()
-        ],
-        child: ListView.builder(
-          itemCount: fees.length,
-          itemBuilder: (context, index){
-            return DataFeeRepair(
-              action: fees[index][0],
-            );
-          }
-        )
+      body: Center(
+        child: Container(
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topRight,
+              end: Alignment.bottomLeft,
+              colors: [
+                aBackgroundColor,
+                Colors.white,
+              ],
+            )
+          ),
+          child: Animate(
+            effects: const[
+              // FadeEffect(),
+              // SlideEffect()
+            ],
+            child: ListView.builder(
+              itemCount: fees.length,
+              itemBuilder: (context, index){
+                return DataFeeRepair(
+                  action: fees[index][0],
+                );
+              }
+            )
+          ),
+        ),
       ),
+
+
+
     );
   }
 }
