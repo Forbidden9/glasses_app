@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glasses_app/pages/tips/details_tips.dart';
+import 'package:bloomix_apk/pages/tips/details_tips.dart';
 
 class GlassesCarefullyInfo extends StatelessWidget {
   final String name;

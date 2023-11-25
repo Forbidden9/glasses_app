@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:glasses_app/pages/tips/glasses_carefully_tips.dart';
-import 'package:glasses_app/pages/tips/meal_visual_hearth.dart';
-import 'package:glasses_app/pages/tips/visual_hearth.dart';
-import 'package:glasses_app/utils/colors.dart';
+import 'package:bloomix_apk/pages/tips/glasses_carefully_tips.dart';
+import 'package:bloomix_apk/pages/tips/meal_visual_hearth.dart';
+import 'package:bloomix_apk/pages/tips/visual_hearth.dart';
+import 'package:bloomix_apk/utils/colors.dart';
 
 class Tips extends StatelessWidget {
   const Tips({super.key});

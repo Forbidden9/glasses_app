@@ -1,4 +1,4 @@
-package l1dro.com.glasses_app
+package l1dro.com.bloomix_apk
 
 import io.flutter.embedding.android.FlutterActivity
 

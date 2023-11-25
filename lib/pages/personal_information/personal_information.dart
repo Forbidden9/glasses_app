@@ -3,10 +3,10 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:glasses_app/pages/location/location.dart';
-import 'package:glasses_app/utils/social.dart';
+import 'package:bloomix_apk/pages/location/location.dart';
+import 'package:bloomix_apk/utils/social.dart';
 import 'package:url_launcher/url_launcher.dart';
-import 'package:glasses_app/utils/colors.dart';
+import 'package:bloomix_apk/utils/colors.dart';
 
 class PersonalInformation extends StatelessWidget {
   const PersonalInformation({super.key});

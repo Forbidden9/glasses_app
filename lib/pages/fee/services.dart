@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:glasses_app/pages/fee/optica_fee.dart';
-import 'package:glasses_app/pages/fee/repair_fee.dart';
-import 'package:glasses_app/utils/colors.dart';
+import 'package:bloomix_apk/pages/fee/optica_fee.dart';
+import 'package:bloomix_apk/pages/fee/repair_fee.dart';
+import 'package:bloomix_apk/utils/colors.dart';
 
 class Services extends StatelessWidget {
   const Services({super.key});

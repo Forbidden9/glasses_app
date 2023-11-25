@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glasses_app/pages/navigation_page/navigation_page.dart';
+import 'package:bloomix_apk/pages/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         useMaterial3: true,
       ),
-      home: const NavigationPage(),
+      home: const SplashScreenPage(),
     );
   }
 }

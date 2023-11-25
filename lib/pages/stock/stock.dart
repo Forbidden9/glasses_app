@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:gap/gap.dart';
-import 'package:glasses_app/pages/stock/accesorios/accesorios.dart';
-import 'package:glasses_app/pages/stock/armor/armor.dart';
-import 'package:glasses_app/pages/stock/galenos/galenos.dart';
-import 'package:glasses_app/pages/stock/cristal/cristal.dart';
-import 'package:glasses_app/utils/colors.dart';
+import 'package:bloomix_apk/pages/stock/accesorios/accesorios.dart';
+import 'package:bloomix_apk/pages/stock/armor/armor.dart';
+import 'package:bloomix_apk/pages/stock/galenos/galenos.dart';
+import 'package:bloomix_apk/pages/stock/cristal/cristal.dart';
+import 'package:bloomix_apk/utils/colors.dart';
 
 class Stock extends StatelessWidget {
   const Stock({super.key});

@@ -1,4 +1,4 @@
-# glasses_app
+# bloomix_apk
 
 App for eyeglass repair business.
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:glasses_app/models/model_tips.dart';
-import 'package:glasses_app/pages/tips/info_tips.dart';
-import 'package:glasses_app/utils/colors.dart';
+import 'package:bloomix_apk/models/model_tips.dart';
+import 'package:bloomix_apk/pages/tips/info_tips.dart';
+import 'package:bloomix_apk/utils/colors.dart';
 
 class GlassesCarefully extends StatefulWidget {
   const GlassesCarefully({super.key});

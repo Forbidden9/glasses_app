@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:glasses_app/pages/stock/data_stock.dart';
+import 'package:bloomix_apk/pages/stock/data_stock.dart';
 
 class ArmorWidget extends StatefulWidget {
   const ArmorWidget({super.key});
