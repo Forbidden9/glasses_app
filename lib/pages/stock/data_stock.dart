@@ -34,15 +34,8 @@ class DataGalenoFee extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: [
-              aBackgroundColor,
-              Colors.white,
-            ],
-          )
-        ),
+        color: Color.fromARGB(223, 239, 163, 105),
+      ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
@@ -50,7 +43,10 @@ class DataGalenoFee extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset("lib/images/stock/galenos.jpg", height: 90,),
+                ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(15)),
+                  child: Image.asset("lib/images/stock/galenos.jpg",height: 90,fit: BoxFit.fill)
+                ),
                 Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ],
             )
@@ -68,9 +64,8 @@ class DataCristalFee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: bBackgroundColor,
-        borderRadius: BorderRadius.circular(12),
+      decoration: const BoxDecoration(
+        color: Color.fromARGB(223, 245, 188, 147),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -78,7 +73,10 @@ class DataCristalFee extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [Column(
               children: [
-                Image.asset("lib/images/stock/cristales.jpg",height: 90,),
+                ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                  child: Image.asset("lib/images/stock/cristales.jpg",height: 90,fit: BoxFit.fill)
+                ),
                 Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ],
             )
@@ -98,9 +96,8 @@ class DataArmorFee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: bBackgroundColor,
-        borderRadius: BorderRadius.circular(12),
+      decoration: const BoxDecoration(
+        color: Color.fromARGB(223, 243, 200, 169),
       ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
@@ -108,7 +105,10 @@ class DataArmorFee extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [Column(
               children: [
-                Image.asset(image,height: 90,),
+                ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(12)),
+                  child: Image.asset(image,height: 90,fit: BoxFit.fill)
+                ),
                 Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ],
             )
@@ -128,18 +128,19 @@ class DataAccesorioFee extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: bBackgroundColor,
-        borderRadius: BorderRadius.circular(12),
+        color: const Color.fromARGB(224, 250, 246, 243),
+        borderRadius: BorderRadius.circular(5),
       ),
       child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [Column(
-              children: [
-                Image.asset("lib/images/stock/colgante.webp", height: 90,),
-                Text(name, style: const TextStyle(
-                    fontWeight: FontWeight.bold, fontSize: 18)),
+              children: [ClipRRect(
+                  borderRadius: const BorderRadius.all(Radius.circular(25)),
+                  child: Image.asset("lib/images/stock/colgante.webp",height: 90,fit: BoxFit.fill)
+                ),
+                Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ],
             )
             ],
