@@ -18,13 +18,10 @@ class PersonalInformation extends StatelessWidget {
       body: Center(
         child: Container(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Gap(120),
-              Container(
-                height: 430,
-                child: Image.asset("lib/images/background/logo.png")
-              ),
-              const Gap(100),
+              Image.asset("lib/images/background/logo.png"),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
