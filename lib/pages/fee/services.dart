@@ -15,7 +15,7 @@ class Services extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              height: 65,
+              height: 75,
               color: aBackgroundColor,
               child: const TabBar(
                 indicatorColor: sBackgroundColor, 

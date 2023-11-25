@@ -16,7 +16,7 @@ class Tips extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 65,
+                height: 80,
                 color: aBackgroundColor,
                 child: const TabBar(
                   indicatorColor: sBackgroundColor, 
