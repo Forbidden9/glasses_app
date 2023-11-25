@@ -31,8 +31,8 @@ class _FeeOpticState extends State<FeeOptic> {
         ),
         child: Animate(
           effects: const[
-            // FadeEffect(),
-            // SlideEffect()
+            FadeEffect(),
+            SlideEffect()
           ],
           child: ListView.builder(
             itemCount: fees.length,

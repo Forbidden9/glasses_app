@@ -40,8 +40,8 @@ class _FeeRepairState extends State<FeeRepair> {
           ),
           child: Animate(
             effects: const[
-              // FadeEffect(),
-              // SlideEffect()
+              FadeEffect(),
+              SlideEffect()
             ],
             child: ListView.builder(
               itemCount: fees.length,
