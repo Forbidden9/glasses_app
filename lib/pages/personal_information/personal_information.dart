@@ -15,91 +15,87 @@ class PersonalInformation extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: psBackgroundColor,
-      body: Center(
-        child: Container(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          const Gap(120),
+          Image.asset("lib/images/background/logo.png"),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              const Gap(120),
-              Image.asset("lib/images/background/logo.png"),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        sendMessageWhatsapp();
-                      },
-                      icon: Image.asset("lib/images/social/whatsapp_icon.png", height: 45, width: 45,),
-                      tooltip: "Whatsapp",
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        sendMessageTelegram();
-                      },
-                      icon: Image.asset("lib/images/social/telegram_icon.png", height: 40, width: 40,),
-                      tooltip: "Telegram",
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        sendMessageInstagram();
-                      },
-                      icon: Image.asset("lib/images/social/instagram_icon.png", height: 35, width: 35,),
-                      tooltip: "Instagram",
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: IconButton(
-                      onPressed: () {
-                        redirectYoutube();
-                      },
-                      icon: Image.asset("lib/images/social/youtube_icon.png", height: 45, width: 54,),
-                      tooltip: "Youtube",
-                    ),
-                  ),
-                  Container(
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(50)
-                    ),
-                    child: IconButton(
-                      onPressed: () => {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => const LocationPage()
-                          )
-                        )
-                      },
-                      icon: Image.asset("lib/images/social/location_map_icon.jpg", height: 35, width: 35,),
-                      tooltip: "Ubicación",
-                    ),
-                  )
-                ],
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(50)
+                ),
+                child: IconButton(
+                  onPressed: () {
+                    sendMessageWhatsapp();
+                  },
+                  icon: Image.asset("lib/images/social/whatsapp_icon.png", height: 45, width: 45,),
+                  tooltip: "Whatsapp",
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(50)
+                ),
+                child: IconButton(
+                  onPressed: () {
+                    sendMessageTelegram();
+                  },
+                  icon: Image.asset("lib/images/social/telegram_icon.png", height: 40, width: 40,),
+                  tooltip: "Telegram",
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(50)
+                ),
+                child: IconButton(
+                  onPressed: () {
+                    sendMessageInstagram();
+                  },
+                  icon: Image.asset("lib/images/social/instagram_icon.png", height: 35, width: 35,),
+                  tooltip: "Instagram",
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(50)
+                ),
+                child: IconButton(
+                  onPressed: () {
+                    redirectYoutube();
+                  },
+                  icon: Image.asset("lib/images/social/youtube_icon.png", height: 45, width: 54,),
+                  tooltip: "Youtube",
+                ),
+              ),
+              Container(
+                decoration: BoxDecoration(
+                  color: Colors.transparent,
+                  borderRadius: BorderRadius.circular(50)
+                ),
+                child: IconButton(
+                  onPressed: () => {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => const LocationPage()
+                      )
+                    )
+                  },
+                  icon: Image.asset("lib/images/social/location_map_icon.jpg", height: 35, width: 35,),
+                  tooltip: "Ubicación",
+                ),
               )
             ],
-          ),
-        ),
+          )
+        ],
       ),
     );
   }
