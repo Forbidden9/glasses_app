@@ -33,10 +33,16 @@ class DataGalenoFee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
-        color: bBackgroundColor,
-        borderRadius: BorderRadius.circular(12),
-      ),
+      decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+            colors: [
+              aBackgroundColor,
+              Colors.white,
+            ],
+          )
+        ),
       child: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Row(
@@ -44,7 +50,7 @@ class DataGalenoFee extends StatelessWidget {
           children: [
             Column(
               children: [
-                Image.asset("lib/images/stock/galenos.jpg",height: 90,),
+                Image.asset("lib/images/stock/galenos.jpg", height: 90,),
                 Text(name, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
               ],
             )
