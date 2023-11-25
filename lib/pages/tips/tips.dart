@@ -12,13 +12,11 @@ class Tips extends StatelessWidget {
     return DefaultTabController(
       length: 3,
       child: Scaffold(
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
+        body: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: 50,
+                height: 65,
                 color: aBackgroundColor,
                 child: const TabBar(
                   indicatorColor: sBackgroundColor, 
@@ -26,13 +24,13 @@ class Tips extends StatelessWidget {
                   dividerColor: cTextColor,
                   tabs: [
                     Tab(
-                      child: Text("Cuidado de los lentes", style: TextStyle(fontWeight: FontWeight.bold)),
+                      child: Text("Cuidado de los lentes", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     ),
                     Tab(
-                      child: Text("Alimentos para la salud visual", style: TextStyle(fontWeight: FontWeight.bold)),
+                      child: Text("Alimentos para la salud visual", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     ),
                     Tab(
-                      child: Text("Salud visual", style: TextStyle(fontWeight: FontWeight.bold)),
+                      child: Text("Enfermedades visuales", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     )
                   ]
                 ), 
@@ -47,7 +45,7 @@ class Tips extends StatelessWidget {
                 ),
               ), 
             ],
-          ),
+          
         ),
       ),
     );
