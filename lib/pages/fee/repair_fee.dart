@@ -1,3 +1,4 @@
+import 'package:bloomix_apk/models/model_fee.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:bloomix_apk/pages/fee/data_fee.dart';
@@ -11,17 +12,6 @@ class FeeRepair extends StatefulWidget {
 }
 
 class _FeeRepairState extends State<FeeRepair> {
-  List fees = [
-    ["Ajuste de espejuelos"],
-    ["Par de almohadillas"],
-    ["Patas de espejuelos"],
-    ["Nylon de alambre para gafas"],
-    ["Terminales"],
-    ["Tornillos"],
-    ["Tornillos con tuercas"],
-    ["Soldadura simple con ajuste"],
-    ["Soldadura compleja"]
-  ];
 
   @override
   Widget build(BuildContext context) {
@@ -44,10 +34,11 @@ class _FeeRepairState extends State<FeeRepair> {
               SlideEffect()
             ],
             child: ListView.builder(
-              itemCount: fees.length,
+              itemCount: repairFees.length,
               itemBuilder: (context, index){
                 return DataFeeRepair(
-                  action: fees[index][0],
+                  action: repairFees[index].text,
+                  image:repairFees[index].image
                 );
               }
             )
