@@ -32,7 +32,7 @@ class PersonalInformation extends StatelessWidget {
                   onPressed: () {
                     sendMessageWhatsapp();
                   },
-                  icon: Image.asset("lib/images/social/whatsapp_icon.png", height: 45, width: 45,),
+                  icon: Image.asset("lib/images/social/icons8_whatsapp.png"),
                   tooltip: "Whatsapp",
                 ),
               ),
@@ -45,7 +45,7 @@ class PersonalInformation extends StatelessWidget {
                   onPressed: () {
                     sendMessageTelegram();
                   },
-                  icon: Image.asset("lib/images/social/telegram_icon.png", height: 40, width: 40,),
+                  icon: Image.asset("lib/images/social/icons8_telegrama.png"),
                   tooltip: "Telegram",
                 ),
               ),
@@ -58,7 +58,7 @@ class PersonalInformation extends StatelessWidget {
                   onPressed: () {
                     sendMessageInstagram();
                   },
-                  icon: Image.asset("lib/images/social/instagram_icon.png", height: 35, width: 35,),
+                  icon: Image.asset("lib/images/social/icons8_instagram.png"),
                   tooltip: "Instagram",
                 ),
               ),
@@ -71,7 +71,7 @@ class PersonalInformation extends StatelessWidget {
                   onPressed: () {
                     redirectYoutube();
                   },
-                  icon: Image.asset("lib/images/social/youtube_icon.png", height: 45, width: 54,),
+                  icon: Image.asset("lib/images/social/icons8_youtube.png"),
                   tooltip: "Youtube",
                 ),
               ),
@@ -89,7 +89,7 @@ class PersonalInformation extends StatelessWidget {
                       )
                     )
                   },
-                  icon: Image.asset("lib/images/social/location_map_icon.jpg", height: 35, width: 35,),
+                  icon: Image.asset("lib/images/social/icons8_marcador.png"),
                   tooltip: "Ubicación",
                 ),
               )
