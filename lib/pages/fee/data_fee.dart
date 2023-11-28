@@ -18,14 +18,14 @@ class DataFeeRepair extends StatelessWidget {
           title:
             Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: cTextColor)
           ),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailFees(image: image),
-              ),
-            );
-          },
+          // onTap: () {
+          //   Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //       builder: (context) => DetailFees(image: image),
+          //     ),
+          //   );
+          // },
         )
       ),
     );
@@ -47,14 +47,14 @@ class DataFeeOptic extends StatelessWidget {
           title:
             Text(action, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 22, color: cTextColor)
           ),
-          onTap: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(
-                builder: (context) => DetailFees(image: image),
-              ),
-            );
-          },
+          // onTap: () {
+          //   Navigator.push(
+          //     context,
+          //     MaterialPageRoute(
+          //       builder: (context) => DetailFees(image: image),
+          //     ),
+          //   );
+          // },
         )
       ),
     );
