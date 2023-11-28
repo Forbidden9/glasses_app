@@ -19,18 +19,19 @@ class Tips extends StatelessWidget {
                 height: 80,
                 color: aBackgroundColor,
                 child: const TabBar(
+                  isScrollable: true,
                   indicatorColor: sBackgroundColor, 
                   labelColor: cTextColor, 
                   dividerColor: cTextColor,
                   tabs: [
                     Tab(
-                      child: Text("Cuidado de los lentes", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                      child: Text("CUIDADO DE LOS LENTES", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     ),
                     Tab(
-                      child: Text("Alimentos para la salud visual", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                      child: Text("ALIMENTOS PARA LA SALUD VISUAL", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     ),
                     Tab(
-                      child: Text("Enfermedades visuales", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                      child: Text("ENFERMEDADES VISUALES", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                     )
                   ]
                 ), 
