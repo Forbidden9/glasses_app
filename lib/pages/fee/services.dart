@@ -23,10 +23,10 @@ class Services extends StatelessWidget {
                 dividerColor: cTextColor,
                 tabs: [
                   Tab(
-                    child: Text("Servicios de Reparación", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                    child: Text("REPARACIÓN", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                   ),
                   Tab(
-                    child: Text("Servicios de Óptica", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
+                    child: Text("ÓPTICA", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14)),
                   )
                 ]
               ), 
